@@ -20,9 +20,6 @@ module.exports = merge(baseConfig, {
                     fallback: 'style-loader',
                     use: {
                         loader: 'css-loader',
-                        options: {
-                            minimize: true
-                        }
                     }
                 })
             },
@@ -33,9 +30,6 @@ module.exports = merge(baseConfig, {
                     use: [
                         {
                             loader: 'css-loader',
-                            options: {
-                                minimize: true
-                            }
                         }, 'less-loader'
                     ]
                 })
